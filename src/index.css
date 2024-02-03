@@ -1,13 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  overflow-x: hidden;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #141414;
+  font-family: "Manrope", sans-serif;
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 19px;
+}
+h1,
+h2,
+h3 {
+  color: white;
+}
+p {
+  color: #999;
+  line-height: 1.8;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+header .container .active,
+.bars {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+header .container .active:hover {
+  color: white !important;
+}
+.hero {
+  position: relative;
+  background-image: url(./images/Home/hero.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* swiper*/
+.swiper {
+  position: unset !important;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  user-select: none;
+  top: -24px !important;
+  font-weight: bold;
+  color: #e50000 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 20px !important;
+  margin: 0px !important;
+}
+.swiper-button-prev {
+  left: unset !important;
+  right: 40px !important;
+}
+.boxGradient {
+  background: linear-gradient(
+      222deg,
+      rgba(229, 0, 0, 0.5) -208.03%,
+      rgba(229, 0, 0, 0) 41.32%
+    ),
+    #0f0f0f;
+}
+.AdsBackground {
+  position: relative;
+  overflow: hidden;
+  background-image: url(./images//Home/hero.jpg);
+}
+.AdsBackground::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #0f0f0f 2.42%,
+    rgba(20, 15, 15, 0.97) 25.46%,
+    rgba(34, 14, 14, 0.91) 46.72%,
+    rgba(229, 0, 0, 0.5)
+  );
+  border-radius: 12px;
 }
