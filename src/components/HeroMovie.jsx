@@ -3,7 +3,7 @@ const HeroMovie = () => {
   return (
     <div className="py-[150px]">
       <div className="container">
-        <img src={heroMovie} />
+        <img alt="img" src={heroMovie} />
       </div>
     </div>
   );

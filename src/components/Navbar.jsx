@@ -26,8 +26,8 @@ const Navbar = () => {
       className="text-white fixed z-[100] inset-0 w-full h-[80px] transition-all duration-300   pt-[40px]">
       <div className="container relative flex items-center justify-between">
         <Link to={"/"} className="flex gap-1">
-          <img src={logo1} />
-          <img src={logo2} />
+          <img alt="logo" src={logo1} />
+          <img alt="logo" src={logo2} />
         </Link>
         <nav className=" bg-[#0F0F0F] hidden lg:flex rounded-[10px] border-[3px] p-[15px] border-[#1F1F1F]">
           <ul className="flex items-center">
@@ -47,10 +47,12 @@ const Navbar = () => {
         </nav>
         <div className="hidden lg:flex items-center cursor-pointer gap-2">
           <img
+            alt="search"
             className="hover:scale-[1.2] transition-all duration-200"
             src={search}
           />
           <img
+            alt="bell"
             className="hover:scale-[1.2] transition-all duration-200"
             src={bell}
           />
@@ -58,6 +60,7 @@ const Navbar = () => {
         {/* mobile & tablet */}
         <div className="flex lg:hidden">
           <img
+            alt="bars"
             onClick={() => {
               setOpenNav((prev) => !prev);
             }}

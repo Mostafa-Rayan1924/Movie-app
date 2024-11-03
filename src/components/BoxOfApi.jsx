@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 
 const BoxOfApi = () => {
   let [movieData, setMovieData] = useState();
@@ -18,6 +18,7 @@ const BoxOfApi = () => {
         key={item.id}
         className="bg-[#1A1A1A] border hover:border-[#e50000]  border-[#262626] rounded-lg p-[20px] transition-all duration-300">
         <img
+          alt="img"
           className="object-cover mb-2 h-[300px] rounded-lg brightness-[0.5]"
           src={heroBox}
         />

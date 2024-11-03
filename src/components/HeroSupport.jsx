@@ -17,6 +17,7 @@ const HeroSupport = () => {
             className="lg:w-[40%] mb-10 md:mb-0 ">
             <MainTitle h2={h2} p={p} />
             <img
+              alt="img"
               className="h-[370px] max-w-full rounded-xl border-4 object-cover  border-[#262626]"
               src={heroSupportImg}
             />

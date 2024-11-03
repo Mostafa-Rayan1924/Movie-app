@@ -8,7 +8,7 @@ const Btn = ({ title, ok = true, color = true }) => {
           ? "hover:bg-[#111111]"
           : "hover:bg-red-900 transition-all duration-300"
       } gap-2 rounded-lg`}>
-      {ok ? <img src={pause} /> : null}
+      {ok ? <img alt="pause" src={pause} /> : null}
       {title}
     </button>
   );

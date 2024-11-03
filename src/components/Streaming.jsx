@@ -55,6 +55,7 @@ const Streaming = () => {
         <div className="flex items-center gap-5 mb-[36px]">
           <div>
             <img
+              alt="img"
               className="bg-[#141414] border border-[#1f1f1f] py-3 px-5 rounded-lg"
               src={item.icon}
             />

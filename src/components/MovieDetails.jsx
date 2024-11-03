@@ -34,6 +34,7 @@ const MovieDetails = () => {
           <>
             <div className=" md:flex justify-between gap-5  ">
               <img
+                alt="img"
                 className="rounded-lg w-full mb-5 md:mb-0  md:w-[50%] object-cover h-[400px] "
                 src={basImg + movieDetails?.poster_path}
               />
