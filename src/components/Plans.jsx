@@ -34,18 +34,18 @@ const Plans = () => {
       <div
         data-aos="flip-left"
         data-aos-duration="1500"
-        className="p-10 pr-[10px] bg-[#1A1A1A] border border-[#262626] hover:border-[#e50000]  hover:translate-y-[-10px] transition-all duration-300 rounded-lg">
+        className="p-4 sm:p-10 pr-[10px] bg-[#1A1A1A] border border-[#262626] hover:border-[#e50000]  hover:translate-y-[-10px] transition-all duration-300 rounded-lg">
         <h3>{item.title}</h3>
-        <p className="mb-6 mt-2.5 ">{item.desc}</p>
+        <p className="mb-6 mt-2.5 line-clamp-2">{item.desc}</p>
         <div className="flex items-center mb-6">
           <h2>{item.price}</h2>
           <p>{item.smPrice}</p>
         </div>
-        <div className="flex w-[280px] h-[49px] items-center gap-2">
-          <Link className="w-full h-full" to={"/description"}>
+        <div className="flex items-center gap-2">
+          <Link className="h-[43px] w-[120px]" to={"/description"}>
             <Btn ok={false} color={false} title={"choose plan"} />
           </Link>
-          <Link className="w-full h-full" to={"/description"}>
+          <Link className="h-[40px] w-[120px]" to={"/description"}>
             <Btn ok={false} title={"free trial"} />
           </Link>
         </div>
